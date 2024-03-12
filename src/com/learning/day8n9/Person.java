@@ -9,7 +9,7 @@ public class Person implements Comparable<Person>{
 	int noOfHouse;
 	
 	
-	public  Person(String name, int age, double salary, double netWorth, int noOfHouses) {
+	public  Person(String name, int age, double salary, double netWorth, int noOfHouse) {
 		this.name = name;
 		this.age = age;
 		this.salary = salary;

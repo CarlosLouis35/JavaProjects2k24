@@ -1,38 +1,43 @@
 package com.learning.productProject;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
 public class Application {
 
 	public static void main(String[] args) {
-		 int option = 0;
-		 int prod = 0;
+		 String option;
+		 String prod;
+		 int inv = 0;
 		 boolean stopp = false;
 		 boolean prcd = false;
+		 
+		 
 		 
 		 
 		System.out.println("Welcome to Giga Walmart");
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("1. Do you want to add a product?");
+		System.out.println("2. Do you want check the inventory?");
 		System.out.println("2. Do you want to exit?");
-		option = sc.nextInt();
+		option = sc.nextLine();
 		
 		switch (option) {
-		case 1: 
+		case "product": 
 		
 			System.out.println("Which product want to add?");
 			Scanner scp = new Scanner(System.in);
-			System.out.println("1. sc");
+			System.out.println("1. Laptop");
 			System.out.println("2. Table");
 			System.out.println("3. Light");
 			
-			prod = scp.nextInt();
+			prod = scp.nextLine();
 			
 			switch (prod) {
 			
-			case 1: // sc
+			case "laptop": // Laptop
 	
 						while (	!prcd ) {
 							
@@ -66,7 +71,9 @@ public class Application {
 							Double	screenSize = sc.nextDouble();
 								sc.nextLine();   
 								
-							Laptop laptop = new Laptop(id, name, prod, id, cpu, ramSize, ssdSize, screenSize);
+							Laptop lapList = new Laptop(ssdSize, cpu, screenSize, screenSize, cpu, ssdSize, ssdSize, screenSize);
+								
+							Laptop laptop = new Laptop(id, name, price, id, cpu, ramSize, ssdSize, screenSize);
 								
 							System.out.println(laptop.toString());
 							
@@ -78,7 +85,7 @@ public class Application {
 							break;
 			
 				// end of laptop
-			case 2: // table
+			case "table": // table
 				while (	!prcd ) {
 					
 					System.out.println("Enter table ID:");
@@ -120,8 +127,8 @@ public class Application {
 					break;
 					// end of table
 					
-			case 3: // light
-while (	!prcd ) {
+			case "light": // light
+				while (	!prcd ) {
 					
 					System.out.println("Enter table ID:");
 					int	id = sc.nextInt();
@@ -157,7 +164,7 @@ while (	!prcd ) {
 
 					break;
 					//end of light
-			case 4: 
+			case "exit": 
 				
 				prcd = true;
 				// exit to menu
@@ -165,7 +172,25 @@ while (	!prcd ) {
 			} //end of  product switch
 		
 		 // end of case 1
-		case 2: {
+		case "inventory":{
+			switch (inv) {
+			
+			case 1: // laptop
+				
+			
+					//end of laptop
+			case 2: // table
+			case 3: // light
+			case 4: // exit
+			
+			
+			}
+			
+			
+		}
+			
+			
+		case "exit": {
 			System.out.println("Exit");
 			
 			

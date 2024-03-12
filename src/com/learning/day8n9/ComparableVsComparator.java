@@ -1,7 +1,6 @@
 package com.learning.day8n9;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class ComparableVsComparator {
@@ -9,11 +8,11 @@ public class ComparableVsComparator {
 	public static void main(String[] args) {
 //	       Comparable                                                    Comparator
 		
-	// Comparable is a interface java.lang                            Comparator  is a interfcae => java.util
-//	it used to compare ciurrent object with another object                its used for comparing two objects 
+	// Comparable is a interface java.lang                            Comparator  is a interface => java.util
+//	it used to compare current object with another object                its used for comparing two objects 
 //	  compateTo()                                                              compare()
 
-	ArrayList<Person>    personList = new ArrayList<Person>();
+	ArrayList<Person>  personList = new ArrayList<Person>();
 	
 	Person person1 = new Person("adam", 21, 4500, 10000, 2);
 	personList.add(person1);

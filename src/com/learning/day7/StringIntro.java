@@ -96,7 +96,7 @@ public class StringIntro {
 			
 //			StringBuffer -> It is thread safe
 //			-> Which means it is suitable for use in multithread enviroments
-//			-> However it is less efficient that StringBuffer
+//			-> However it is less efficient that StringBuilder
 			
 			StringBuffer strBuf = new StringBuffer();
 			

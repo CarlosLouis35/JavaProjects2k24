@@ -1,4 +1,4 @@
-package com.learning.inheritanceclusterf;
+package com.learning.inheritancecluster;
 
 public class Car {
       String engineType;
