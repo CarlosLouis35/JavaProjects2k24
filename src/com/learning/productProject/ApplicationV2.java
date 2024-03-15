@@ -41,7 +41,7 @@ public class ApplicationV2 {
 			
 			case "laptop": // Laptop
 	
-						while (	!prcd ) {
+						while (!prcd ) {
 							
 							System.out.println("Enter laptop ID:");
 							int	id = sc.nextInt();
@@ -83,7 +83,7 @@ public class ApplicationV2 {
 							prcd = sc.nextBoolean();
 							sc.nextLine()	;						
 						}
-							break;
+						break;
 			
 				// end of laptop
 			case "table": // table
@@ -122,9 +122,9 @@ public class ApplicationV2 {
 					
 					System.out.println("Do you wish to stop?");
 					prcd = sc.nextBoolean();
-					sc.nextLine()	;						
+					sc.nextLine()	;break;						
 				}				
-					break;
+					
 					// end of table
 					
 			case "light": // light
@@ -214,13 +214,12 @@ public class ApplicationV2 {
 	
 						} 
 							
-		case "exit": {
+		case "exit": 
 			System.out.println("Exit");
-			
-			
-		}break;// end of case 3
+		break;// end of case 3
 		
-	}
+	
+		}
 
 }
 			
